@@ -1,0 +1,20 @@
+{
+  "name": "SFCC Job Log Viewer",
+  "description": "Chrome Extension to view SFCC Job Logs without downloading them.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": ["background", "tabs", "activeTab", "webRequest", "webRequestBlocking", "*://*.demandware.net/on/demandware.store/Sites-Site/default/*"],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.demandware.net/on/demandware.store/Sites-Site/default/*"
+      ],
+      "js": ["jobLogViewer.js"],
+      "all_frames": false
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }  
+}

@@ -9,12 +9,14 @@
         "activeTab",
         "webRequest",
         "webRequestBlocking",
-        "*://*.demandware.net/on/demandware.store/Sites-Site/default/*"
+        "*://*.demandware.net/on/demandware.store/Sites-Site/default/*",
+        "*://*.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/*"
     ],
     "content_scripts": [
         {
             "matches": [
-                "*://*.demandware.net/on/demandware.store/Sites-Site/default/*"
+                "*://*.demandware.net/on/demandware.store/Sites-Site/default/*",
+                "*://*.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/*"
             ],
             "js": [
                 "jobLogViewer.js"

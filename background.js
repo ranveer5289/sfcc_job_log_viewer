@@ -11,7 +11,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     }
   },
   {
-    urls: ["*://*.demandware.net/on/demandware.store/Sites-Site/default/*"],
+    urls: ["*://*.demandware.net/on/demandware.store/Sites-Site/default/*", "*://*.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/*"],
     types: ["main_frame"],
   },
   ["blocking"]
